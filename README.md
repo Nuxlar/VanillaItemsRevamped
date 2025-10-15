@@ -1,23 +1,20 @@
-# New Mod
+## Vanilla Items Revamped
 
-A template for a Risk of Rain 2 mod.
+### Common (White)
 
-Easy thunderstore build packaging, proper logging, and a tutorial.
+- **Bison Steak**: Increases HP by **5%** instead of a flat **25**
+- **Sticky Bomb**: Increases chance **5% -> 8%**
+- **Gasoline**: Reduces initial blast damage **150% -> 75%**
+- **Monster Tooth**: Replaced pickup orb with direct orb (flies directly to player)
+- **Stun Grenade**: Stun chance isn't tied to proc coefficient anymore (except if proc co is 0)
+- **Lens Maker's Glasses**: Increases critical strike chance **10% -> 15%**
+- **Warbanner**: Added **damage increase by 15%**, also spawns banners during **holdout events** (teleporter, pillars, etc...)
 
-*Disclaimer: I mainly use VSCode, Visual Studio is better suited for these projects but I like my themes.*
+### Uncommon (Green)
 
-**Credits to [Goorakh](https://github.com/Goorakh) for most of the project structure.**
+- **Predatory Instincts**: increases crit chance per stack **(+5% per stack)**
+- **Harvester's Scythe**: increases crit chance per stack **(+5% per stack)**
 
-### Quickstart
+## Credits
 
-1. On the GitHub repo, select the `Use this template` button then click `Create a new repository`. Or clone/download the repo.
-2. Change the `NewMod.sln` and `NewMod.csproj` filenames to your mod's name
-3. Inside of `NewMod.sln`, change any instance of "NewMod" to your mod's name `NewMod", "NewMod\NewMod.csproj`
-4. Change the `NewMod` folder name to your mod's name
-5. Inside of `Log.cs`, and `Main.cs` change the namespace from `NewMod` to your mod's name
-6. Inside of the `Log.cs` file, find this code line `const string MOD_NAME = nameof(NewMod);` and replace `NewMod` with your mod's name
-7. Inside of `Main.cs`, change the `PluginAuthor` to your Thunderstore team name (sign into thunderstore and create a team), change the `PluginName` to the mod name, and `PluginVersion` to whatever version you're launching.
-8. Fill in the `manifest.json` with your mod info, you can leave the `website_url` blank or add a link to the GitHub issues tab of your repo
-9. Build the project
-    - In Visual Studio, you just right click the solution or csproj and click `rebuild`
-    - In VSCode, open a terminal at the root of your mod project and run `dotnet build` or `dotnet build --configuration Release` if you're ready to publish to Thunderstore (you do need the dotnet sdk installed)
+- Moffein for a bunch of base code/utils and some item reworks [RiskyMod](https://thunderstore.io/package/Risky_Lives/RiskyMod/)
